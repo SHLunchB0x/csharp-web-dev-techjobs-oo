@@ -13,10 +13,8 @@ namespace TechJobsOO
             nextId++;
         }
 
-        public Location(string value)
-        {
-            Id = nextId;
-            nextId++;
+        public Location(string value) : this()
+        { 
             //Not sure if this part is correct ^
             Value = value;
         }

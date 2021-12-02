@@ -37,6 +37,15 @@ namespace TechJobsOO
         {
             return HashCode.Combine(Id);
         }
+        public override string ToString()
+        {
+            return $"ID: {Id} \n" +
+                $"Name: {Name}\n" +
+                $"Employer:  {EmployerName}\n" +
+                $"Location: {EmployerLocation}\n" +
+                $"Position Type: {JobType}\n" +
+                $"Core Competency: {JobCoreCompetency}";
+        }
 
         // TODO: Add the two necessary constructors.
 
